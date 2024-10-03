@@ -1,0 +1,30 @@
+# Editor
+/.idea
+/.vscode
+
+# Project
+.env*
+src/assets/*
+/.next
+/node_modules
+/.husky
+/.circleci
+/.github
+README.md
+
+# Credentials
+*.crt
+*.key
+*.pem
+
+# Configs
+.prettierignore
+.eslintignore
+.gitattributes
+.dockerignore
+
+# Misc
+*.png
+
+# Docker
+/ops

@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+  fchc-portal:
+    build:
+      context: ../
+      dockerfile: docker/portal/dev/Dockerfile
+    hostname: fchc-portal
+    ports:
+     - 3000:3000
+    environment:
+      - NEXT_PUBLIC_APP_VERSION=${NEXT_PUBLIC_APP_VERSION}
+      - NEXT_PUBLIC_API_BASE_URL=${NEXT_PUBLIC_API_BASE_URL}
+    volumes:
+      - ../:/fchc-portal

@@ -1,0 +1,209 @@
+@font-face {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../assets/fonts/Inter-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-style: normal;
+  src: url('../assets/fonts/Inter-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-style: normal;
+  src: url('../assets/fonts/Inter-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../assets/fonts/Inter-Bold.woff2') format('woff2');
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+  }
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  background-color: #f8f8f8;
+}
+
+html {
+  /* @media screen and (min-width: 2560px) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 3839px) {
+    font-size: 20px;
+  } */
+
+  font-size: 14px;
+
+  .ant-select-item-empty {
+    font-size: 1rem;
+  }
+
+  .ant-select-dropdown {
+    border: 1px solid #00000026;
+    border-radius: 4px;
+
+    .ant-select-item {
+      font-size: 0.86rem;
+      line-height: 2rem;
+    }
+  }
+
+  .ant-dropdown-menu {
+    font-size: 1rem;
+    border: 1px solid #00000026;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #ffffff00;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #949494;
+    border-radius: 16px;
+  }
+}
+
+.ant-modal-content {
+  padding-inline: 0px !important;
+}
+
+@media screen and (max-width: 576px) {
+  .ant-modal {
+    padding-bottom: 0px;
+    vertical-align: bottom !important;
+    text-align: start;
+    top: 65px;
+  }
+
+  .ant-table-sticky-holder {
+    z-index: 1 !important;
+  }
+}
+
+.ant-layout {
+  background: transparent;
+}
+
+.ant-dropdown-menu-item-selected span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ant-dropdown-menu-item-selected span::after {
+  content: url('../assets/icons/common/check.svg');
+  margin-inline-start: 0.57rem;
+}
+
+.ant-notification-notice-wrapper {
+  width: max-content !important;
+  max-width: 311px !important;
+}
+
+.ant-notification-notice {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.574rem;
+  border: 1px solid var(--colorBorder, rgba(0, 0, 0, 0.15));
+  background: var(--tooltipBg, rgba(0, 0, 0, 0.88));
+  box-shadow: 0px 12px 49.9px 0px rgba(0, 0, 0, 0.17);
+  align-items: center;
+  padding: 0.5rem 1.142rem !important;
+  color: var(--colorBorderBg, #fff);
+
+  .ant-notification-notice-with-icon .ant-notification-notice-message {
+    margin-inline-start: 1.714rem !important;
+    color: var(--colorBorderBg, #fff);
+    margin-bottom: 0 !important;
+  }
+
+  .ant-notification-notice-icon {
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.142rem !important;
+  }
+
+  .ant-notification-notice-close {
+    position: static !important;
+
+    .ant-notification-notice-close-x {
+      color: var(--colorBorderBg, #fff) !important;
+      font-size: 1rem;
+    }
+  }
+
+  .ant-notification-notice-message {
+    font-size: 1rem !important;
+    line-height: 1.5714rem !important;
+    margin-inline-end: 1rem;
+  }
+}
+
+.ant-drawer-inline {
+  position: fixed;
+}
+
+tbody .ant-table-cell,
+tbody .ant-table-cell div,
+tbody .ant-table-cell span {
+  font-size: 0.85714rem !important;
+}
+
+th .ant-table-cell,
+th .ant-table-cell div,
+th .ant-table-cell span {
+  font-size: 1rem !important;
+}
+
+.ant-modal .ant-typography {
+  font-family: 'Inter' !important;
+}
+
+.ant-modal-confirm-btns .ant-btn + .ant-btn-lg {
+  font-family: 'Inter' !important;
+  font-size: 1.142857rem;
+}
+
+.ant-modal-confirm-btns > .ant-btn-lg {
+  font-family: 'Inter' !important;
+  font-size: 1.142857rem;
+}
+
+.ant-table-wrapper .ant-table-sticky-scroll {
+  display: none;
+}
+
+.ant-dropdown-menu-title-content {
+  font-size: 0.857142857rem;
+}
+
+.sortIcon {
+  svg {
+    font-size: 1.1425rem;
+    width: 1.1425rem;
+    height: 1.1425rem;
+  }
+}
